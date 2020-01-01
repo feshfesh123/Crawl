@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
+    public data: string[];
+
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) {}
  
   getDeadline(userLogin: any) {
